@@ -17,3 +17,7 @@
 |user_id|integer|null: false|
 |group_id|integer|null: false|
 
+### Association
+- belongs_to :user
+- belongs_to :group
+
