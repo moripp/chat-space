@@ -30,6 +30,7 @@
 ### Association
 - has_many : massages
 - has_many :users, through: :groups_users
+- has_many :groups_users
 
 ## groups_usersテーブル
 |Column|Type|Options|
