@@ -9,3 +9,11 @@
 - has_many :messages
 - has_many :groups, through: :users_groups
 
+## messageテーブル
+|Column|Type|Options|
+|------|----|-------|
+|body|text||
+|image|string||
+|user_id|integer|null: false|
+|group_id|integer|null: false|
+
