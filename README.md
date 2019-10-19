@@ -25,7 +25,7 @@
 ## groupテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|text||
+|name|string|null: false|
 
 ### Association
 - has_many : massages
