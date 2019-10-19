@@ -26,3 +26,7 @@
 |------|----|-------|
 |group_name|text||
 
+### Association
+- has_many : massages
+- has_many :users, through: :groups_users
+
