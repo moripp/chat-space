@@ -21,3 +21,8 @@
 - belongs_to :user
 - belongs_to :group
 
+## groupテーブル
+|Column|Type|Options|
+|------|----|-------|
+|group_name|text||
+
