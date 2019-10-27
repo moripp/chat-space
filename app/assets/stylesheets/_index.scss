@@ -7,3 +7,24 @@ $blue: #38AEF0;
   &__side {
     width: 300px;
 
+    // 左サイド、上、ユーザー名表示
+    &__header {
+      height: 100px;
+      padding: 0 20px;
+      background-color: #253141;
+      &__box {
+        line-height: 100px;
+        font-size: 16px;
+        font-weight: bold;
+        color: $white;
+        &__icon {
+          float: right;
+          font-size: 20px;
+          color: $white;
+          &__edit {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
