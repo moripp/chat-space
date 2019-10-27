@@ -112,3 +112,47 @@ $blue: #38AEF0;
       }
     }
 
+    // メッセージフォーム
+    &__footer {
+      height: 90px;
+      padding: 20px 40px;
+      background-color: #ddd;
+      &__form {
+        display: flex;
+        &__input-box {
+          width: 100%;
+          position: relative;
+          &__message{
+            width: 100%;
+            height: 50px;
+            padding: 0 40px 0 10px;
+            font-size: 16px;
+            color: #434A54;
+            &__image {
+              position: absolute;
+              top: 12.5px;
+              right: 10px;
+              &__icon {
+                font-size: 25px;
+                cursor: pointer;
+              }
+              &__file {
+                display: none;
+              }
+            }
+          }
+        }
+        &__btn {
+          background-color: $blue;
+          width: 100px;
+          height: 50px;
+          padding: 0 30px;
+          margin-left: 15px;
+          color: $white;
+          cursor: pointer;
+        } 
+      }
+    }
+  }
+}
+
