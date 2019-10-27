@@ -13,3 +13,15 @@
     .wrapper__side__contents
       = render "group"
 
+  .wrapper__maine
+    -# メイン、上、グウープ名、所属メンバー表示
+    .wrapper__maine__header
+      .wrapper__maine__header__box
+        .wrapper__maine__header__box__group-name
+          グループ名
+        .wrapper__maine__header__box__members-name
+          Member : nishiwaki suzuki tanaka onishi
+      .wrapper__maine__header__box2
+        = link_to "", class: "wrapper__maine__header__box2__btn" do
+          Edit
+
