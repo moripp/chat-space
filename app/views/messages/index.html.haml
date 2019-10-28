@@ -29,3 +29,12 @@
     .wrapper__maine__contents
       = render "message"
 
+    -# メッセージフォーム
+    .wrapper__maine__footer
+      %form.wrapper__maine__footer__form
+        .wrapper__maine__footer__form__input-box
+          %input{name: "body", placeholder: "type a message", type: "text", class: "wrapper__maine__footer__form__input-box__message"}
+          %label{class: "wrapper__maine__footer__form__input-box__message__image"}
+            = fa_icon "image", class: "wrapper__maine__footer__form__input-box__message__image__icon"
+            = file_field :upload_file,{}, class: "wrapper__maine__footer__form__input-box__message__image__file"
+        %input{type: "submit", value: "Send", class: "wrapper__maine__footer__form__btn"}
