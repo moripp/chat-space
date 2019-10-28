@@ -156,3 +156,8 @@ $blue: #38AEF0;
   }
 }
 
+// スクロール表示削除
+::-webkit-scrollbar {
+  display: none;
+  -webkit-appearance: none;
+}
