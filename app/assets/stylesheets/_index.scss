@@ -28,3 +28,24 @@ $blue: #38AEF0;
       }
     }
 
+    // 左サイド、下、所属グループ一覧
+    &__contents {
+      height: calc(100vh - 100px);
+      padding: 20px 20px 0;
+      background-color: #2f3e51;
+      overflow: scroll;      
+      &__box {
+        padding: 0 0 40px 0;
+        font-weight: bold;
+        color: $white;
+        &__group {
+          margin-bottom: 5px;
+          font-size: 15px;
+        }
+        &__text {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+  
