@@ -49,3 +49,36 @@ $blue: #38AEF0;
     }
   }
   
+  &__maine {
+    width: calc(100vw - 300px);
+
+    // メイン、上、グウープ名、所属メンバー表示
+    &__header {
+      height: 100px;
+      padding: 0 40px 0;
+      display: flex;
+      justify-content: space-between;
+      &__box {
+        padding: 35px 0 0 0;
+        &__group-name {
+          margin-bottom: 15px;
+          font-size: 20px;
+          color: #333333;
+        }
+        &__members-name {
+          font-size: 12px;
+          color: #999999;
+        }
+      }
+      &__box2 {
+        padding: 40px 0 0 0;
+        &__btn {
+          height: 40px;
+          padding: 10px 20px;
+          border: solid 1px $blue;
+          color: $blue;
+          text-decoration: none;
+        }
+      }
+    }
+
