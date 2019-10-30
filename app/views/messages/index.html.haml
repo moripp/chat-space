@@ -3,8 +3,8 @@
     -# 左サイド、上、ユーザー名表示
     .wrapper__side__header
       .wrapper__side__header__box
-        ユーザー名
-        = link_to "", class: "wrapper__side__header__box__icon" do
+        = current_user.name
+        = link_to "/users/#{current_user.id}/edit", class: "wrapper__side__header__box__icon" do
           = fa_icon "cog"
         = link_to "", class: "wrapper__side__header__box__icon" do
           = fa_icon "edit",class: "wrapper__side__header__box__icon__edit"
