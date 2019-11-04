@@ -1,7 +1,7 @@
 - current_user.groups.each do |group|
   .wrapper__side__contents__box
-    = link_to group_messages_path(group) do
-      .wrapper__side__contents__box__group
+    = link_to group_messages_path(group), class: "wrapper__side__contents__box__link" do
+      .wrapper__side__contents__box__link__group
         = group.name
-      .wrapper__side__contents__box__text
-        テストですよ。aaaaaa
+      .wrapper__side__contents__box__link__text
+        = group.show_last_message
