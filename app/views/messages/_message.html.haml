@@ -1,8 +1,11 @@
 .wrapper__maine__contents__message
   .wrapper__maine__contents__message__info
     .wrapper__maine__contents__message__info__user
-      ユーザー名
+      = message.user.name
     .wrapper__maine__contents__message__info__date
-      2019/10/26 16:00
+      = message.created_at.strftime("%Y/%m/%d %H:%M")
   .wrapper__maine__contents__message__text
-    メッセージ あああああああああああああ
+    - if message.content.present?
+      %p.wrapper__maine__contents__message__text__content
+        = message.content
+    = image_tag message.image.url, class: "wrapper__maine__contents__message__text__image" if message.image.present?
