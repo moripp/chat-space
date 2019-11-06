@@ -6,11 +6,13 @@
     .wrapper__maine__header
       .wrapper__maine__header__box
         .wrapper__maine__header__box__group-name
-          グループ名
+          = @group.name
         .wrapper__maine__header__box__members-name
-          Member : nishiwaki suzuki tanaka onishi
+          Member : 
+          - @group.group_users.each do |group_user|
+            = group_user.user.name
       .wrapper__maine__header__box2
-        = link_to "", class: "wrapper__maine__header__box2__btn" do
+        = link_to edit_group_path(params[:group_id]), class: "wrapper__maine__header__box2__btn" do
           Edit
 
     -# メッセージ一覧
