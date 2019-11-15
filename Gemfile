@@ -59,10 +59,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # haml gem install
 gem 'haml-rails'
 gem "font-awesome-rails"
-
 gem 'devise'
-
 gem 'carrierwave'
 gem 'mini_magick'
-
 gem 'jquery-rails'
+gem "pry-rails"
