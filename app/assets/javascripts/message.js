@@ -33,6 +33,13 @@ $(function() {
       dataType: "json",
       processData: false,
       contentType: false
-    });
+    })
+    .done(function(data) {
+      var html = buildHTML(data);
+      $('.wrapper__maine__contents').append(html);
+      $('.new_message')[0].reset();
+      $('.wrapper__maine__form__input__btn').prop('disabled', false);
+      $('.wrapper__maine__contents').animate({ scrollTop: $('.wrapper__maine__contents')[0].scrollHeight});
+    })
   });
 });
