@@ -41,5 +41,9 @@ $(function() {
       $('.wrapper__maine__form__input__btn').prop('disabled', false);
       $('.wrapper__maine__contents').animate({ scrollTop: $('.wrapper__maine__contents')[0].scrollHeight});
     })
+    .fail(function() {
+      alert("メッセージ送信に失敗しました");
+      $('.wrapper__maine__form__input__btn').prop('disabled', false);
+    })
   });
 });
