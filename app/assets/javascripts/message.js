@@ -72,4 +72,8 @@ $(function() {
     });
   };
 
+  var match_check_url = `/groups/${group_id}/messages`;
+  if (window.location.href.match(match_check_url)){
+    setInterval(reloadMessages, 7000);
+  };
 });
