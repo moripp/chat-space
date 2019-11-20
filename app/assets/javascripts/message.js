@@ -46,4 +46,30 @@ $(function() {
       $('.wrapper__maine__form__input__btn').prop('disabled', false);
     })
   });
+
+  var group_id = $(".wrapper__maine__header").data("group-id");
+
+  var reloadMessages = function() {
+    var last_message_id = $(".wrapper__maine__contents__message:last").data("message-id");
+    var url = `/groups/${group_id}/api/messages`;
+    $.ajax({
+      url: url,
+      type: "GET",
+      datatype: "json",
+      data: {id: last_message_id}
+    })
+    .done(function(messages) {
+      console.log(messages)
+      let insertHTML = '';
+      messages.forEach(function(message) {
+        insertHTML = buildHTML(message);
+        $('.wrapper__maine__contents').append(insertHTML);
+      })
+      $('.wrapper__maine__contents').animate({ scrollTop: $('.wrapper__maine__contents')[0].scrollHeight});
+    })
+    .fail(function() {
+      console.log("error");
+    });
+  };
+
 });
