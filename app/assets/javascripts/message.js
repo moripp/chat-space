@@ -67,7 +67,7 @@ $(function() {
       $('.wrapper__maine__contents').animate({ scrollTop: $('.wrapper__maine__contents')[0].scrollHeight});
     })
     .fail(function() {
-      console.log("error");
+      alert("error");
     });
   };
 
