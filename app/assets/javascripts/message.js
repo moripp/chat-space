@@ -3,7 +3,7 @@ $(function() {
     var html_content = message.content==null ? "" : `<p class="wrapper__maine__contents__message__text__content">${message.content}</p>`;
     var html_image = message.image==null ? "" : `<img class="wrapper__maine__contents__message__text__image" src="${message.image}">`;
     var date = message.created_at
-    var html = `<div class="wrapper__maine__contents__message">
+    var html = `<div class="wrapper__maine__contents__message" data-message-id=${message.id}>
                   <div class="wrapper__maine__contents__message__info">
                     <div class="wrapper__maine__contents__message__info__user">
                       ${message.user_name}

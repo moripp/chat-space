@@ -3,7 +3,7 @@
 
   .wrapper__maine
     -# メイン、上、グウープ名、所属メンバー表示
-    .wrapper__maine__header
+    .wrapper__maine__header{data:{group_id: "#{@group.id}"}}
       .wrapper__maine__header__box
         .wrapper__maine__header__box__group-name
           = @group.name
